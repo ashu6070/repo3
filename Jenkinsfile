@@ -9,6 +9,7 @@ pipeline {
   stages {
     stage (stage1) {
       steps {
+        sudo "yum install git -y"
         sudo "ansible-playbook test.yaml
    
   
