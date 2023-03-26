@@ -10,7 +10,7 @@ pipeline {
     stage ("stage1") {
       steps {
        
-         sh sudo "ansible-playbook test.yaml"
+         sh "ansible-playbook test.yaml"
    
   
   
