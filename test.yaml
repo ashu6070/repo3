@@ -1,0 +1,16 @@
+---
+- hosts: qalinux
+  user: ashutosh
+  become: yes
+  connection: ssh
+  gather_facts: yes
+
+  tasks:
+    - name: install
+      action: yum pkg=httpd state=present
+
+    - name: start
+      action: service name=httpd state=started
+
+    - name: deploy
+      action: copy src=index.html dest=/var/www/html
