@@ -10,7 +10,7 @@ pipeline {
     stage ("stage1") {
       steps {
         
-        sudo "ansible-playbook /home/ashutosh/test.yaml"
+        "ansible-playbook /home/ashutosh/test.yaml"
    
   
   
