@@ -1,5 +1,5 @@
 ---
-- hosts: qalinux
+- hosts: devlinux
   user: ashutosh
   become: yes
   connection: ssh
