@@ -10,7 +10,7 @@ pipeline {
     stage ("stage1") {
       steps {
        sh "cp -r /mnt/ass/index.html /home/ashutosh/"
-        sh "ansible-playbook test.yaml --check"
+        sh "ansible-playbook /home/ashutosh/test.yaml --check"
 
        sh "ansible-playbook /home/ashutosh/test.yaml"
    
