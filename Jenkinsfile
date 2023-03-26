@@ -7,7 +7,7 @@ pipeline {
     }
   }
   stages {
-    stage (stage1) {
+    stage ("stage1") {
       steps {
         
         sudo "ansible-playbook test.yaml"
